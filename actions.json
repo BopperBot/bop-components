@@ -130,14 +130,14 @@
             ]
         },
         {
-            "id": "memberBan",
-            "usrFriendly": "Ban a Member",
-            "description": "Bans a given member from the server.",
+            "id": "userBan",
+            "usrFriendly": "Ban a User",
+            "description": "Bans a given user from the server.",
             "parameters": [
                 {
-                    "id": "member",
-                    "usrFriendly": "Member",
-                    "type": "MEMBER"
+                    "id": "user",
+                    "usrFriendly": "User",
+                    "type": "USER"
                 },
                 {
                     "id": "reason",
@@ -147,26 +147,26 @@
             ]
         },
         {
-            "id": "memberUnban",
-            "usrFriendly": "Unban a Member",
-            "description": "Unbans a given member from the server.",
+            "id": "userUnban",
+            "usrFriendly": "Unban a User",
+            "description": "Unbans a given user from the server.",
             "parameters": [
                 {
-                    "id": "member",
-                    "usrFriendly": "Member",
-                    "type": "MEMBER"
+                    "id": "user",
+                    "usrFriendly": "User",
+                    "type": "USER"
                 }
             ]
         },
         {
-            "id": "memberKick",
-            "usrFriendly": "Kick a Member",
-            "description": "Kicks a given member from the server.",
+            "id": "userKick",
+            "usrFriendly": "Kick a User",
+            "description": "Kicks a given user from the server.",
             "parameters": [
                 {
-                    "id": "member",
-                    "usrFriendly": "Member",
-                    "type": "MEMBER"
+                    "id": "user",
+                    "usrFriendly": "User",
+                    "type": "USER"
                 },
                 {
                     "id": "reason",
@@ -176,14 +176,14 @@
             ]
         },
         {
-            "id": "memberTimeout",
-            "usrFriendly": "Time out a Member",
-            "description": "Times out a given member in the server for a given time.",
+            "id": "userTimeout",
+            "usrFriendly": "Time out a User",
+            "description": "Times out a given user in the server for a given time.",
             "parameters": [
                 {
-                    "id": "member",
-                    "usrFriendly": "Member",
-                    "type": "MEMBER"
+                    "id": "user",
+                    "usrFriendly": "User",
+                    "type": "USER"
                 },
                 {
                     "id": "time",
@@ -198,26 +198,26 @@
             ]
         },
         {
-            "id": "memberTimeoutRemove",
-            "usrFriendly": "Remove a Member's Timeout",
-            "description": "Removes a given member's timeout for the server.",
+            "id": "userTimeoutRemove",
+            "usrFriendly": "Remove a User's Timeout",
+            "description": "Removes a given user's timeout for the server.",
             "parameters": [
                 {
-                    "id": "member",
-                    "usrFriendly": "Member",
-                    "type": "MEMBER"
+                    "id": "user",
+                    "usrFriendly": "User",
+                    "type": "USER"
                 }
             ]
         },
         {
-            "id": "memberMove",
-            "usrFriendly": "Move a Member",
-            "description": "Moves a given member to a given voice channel.",
+            "id": "userMove",
+            "usrFriendly": "Move a User",
+            "description": "Moves a given user to a given voice channel.",
             "parameters": [
                 {
-                    "id": "member",
-                    "usrFriendly": "Member",
-                    "type": "MEMBER"
+                    "id": "user",
+                    "usrFriendly": "User",
+                    "type": "user"
                 },
                 {
                     "id": "channel",
@@ -227,14 +227,14 @@
             ]
         },
         {
-            "id": "memberAddRole",
-            "usrFriendly": "Add a Role to a Member",
-            "description": "Adds a given role to a given member.",
+            "id": "userAddRole",
+            "usrFriendly": "Add a Role to a user",
+            "description": "Adds a given role to a given user.",
             "parameters": [
                 {
-                    "id": "member",
-                    "usrFriendly": "Member",
-                    "type": "MEMBER"
+                    "id": "user",
+                    "usrFriendly": "user",
+                    "type": "user"
                 },
                 {
                     "id": "role",
@@ -244,14 +244,14 @@
             ]
         },
         {
-            "id": "memberRemoveRole",
-            "usrFriendly": "Remove a Role from a Member",
-            "description": "Removes a given role from a given member.",
+            "id": "userRemoveRole",
+            "usrFriendly": "Remove a Role from a user",
+            "description": "Removes a given role from a given user.",
             "parameters": [
                 {
-                    "id": "member",
-                    "usrFriendly": "Member",
-                    "type": "MEMBER"
+                    "id": "user",
+                    "usrFriendly": "user",
+                    "type": "user"
                 },
                 {
                     "id": "role",
@@ -292,14 +292,14 @@
             ]
         },
         {
-            "id": "roleMemberAdd",
-            "usrFriendly": "Give a Role to a Member",
-            "description": "Gives a given role to a given member.",
+            "id": "roleuserAdd",
+            "usrFriendly": "Give a Role to a user",
+            "description": "Gives a given role to a given user.",
             "parameters": [
                 {
-                    "id": "member",
-                    "usrFriendly": "Member",
-                    "type": "MEMBER"
+                    "id": "user",
+                    "usrFriendly": "user",
+                    "type": "user"
                 },
                 {
                     "id": "role",
@@ -309,14 +309,14 @@
             ]
         },
         {
-            "id": "roleMemberRemove",
-            "usrFriendly": "Remove a Role from a Member",
-            "description": "Removes a given role from a given member.",
+            "id": "roleuserRemove",
+            "usrFriendly": "Remove a Role from a user",
+            "description": "Removes a given role from a given user.",
             "parameters": [
                 {
-                    "id": "member",
-                    "usrFriendly": "Member",
-                    "type": "MEMBER"
+                    "id": "user",
+                    "usrFriendly": "user",
+                    "type": "user"
                 },
                 {
                     "id": "role",
