@@ -515,12 +515,12 @@
                 },
                 {
                     "id": "deafened",
-                    "usrFriendly": "Is the member from trigger deafened",
+                    "usrFriendly": "Is the member from trigger deafened by anothe member",
                     "type": "BOOLEAN"
                 },
                 {
                     "id": "muted",
-                    "usrFriendly": "Is the member from trigger muted",
+                    "usrFriendly": "Is the member from trigger muted by another member",
                     "type": "BOOLEAN"
                 },
                 {
@@ -540,15 +540,37 @@
                 },
                 {
                     "id": "streaming",
-                    "usrFriendly": "Is the member from trigger watching a stream",
+                    "usrFriendly": "Is the member from trigger streaming",
                     "type": "BOOLEAN"
                 },
                 {
-                    "id": "selfStream",
-                    "usrFriendly": "Is the member from trigger streaming",
+                    "id": "video",
+                    "usrFriendly": "Does the member from trigger have their camera on",
                     "type": "BOOLEAN"
                 }
             ]
+        },
+        {
+            "id": "buttonPressed",
+            "usrFriendly": "When a button from a message panel is pressed",
+            "description": "This will trigger your actions whenever a user presses a button from a message panel.",
+            "parameters": [
+                {
+                    "id": "user",
+                    "usrFriendly": "User who pressed the button from trigger",
+                    "type": "USER"
+                },
+                {
+                    "id": "name",
+                    "usrFriendly": "Label of the button from trigger",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "id": "commandSent",
+            "usrFriendly": "When a custom command is sent",
+            "description": "This will trigger your actions whenever a user sends a custom command."
         }
     ]
 }
