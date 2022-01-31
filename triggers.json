@@ -1,0 +1,554 @@
+{
+    "triggers": [
+        {
+            "id": "channelCreate",
+            "usrFriendly": "When a channel is created",
+            "description": "This will trigger your actions whenever a channel is created.",
+            "parameters": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Created channel from trigger",
+                    "type": "CHANNEL"
+                }
+            ]
+        },
+        {
+            "id": "channelUpdate",
+            "usrFriendly": "When a channel is modified",
+            "description": "This will trigger your actions whenever a channel is modified.",
+            "parameters": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Modified channel from trigger",
+                    "type": "CHANNEL"
+                }
+            ]
+        },
+        {
+            "id": "channelDelete",
+            "usrFriendly": "When a channel is deleted",
+            "description": "This will trigger your actions whenever a channel is deleted.",
+            "parameters": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Deleted channel from trigger",
+                    "type": "CHANNEL"
+                }
+            ]
+        },
+        {
+            "id": "threadCreate",
+            "usrFriendly": "When a thread is created",
+            "description": "This will trigger your actions whenever a thread is created.",
+            "parameters": [
+                {
+                    "id": "thread",
+                    "usrFriendly": "Created thread from trigger",
+                    "type": "CHANNEL"
+                }
+            ]
+        },
+        {
+            "id": "threadUpdate",
+            "usrFriendly": "When a thread is modified",
+            "description": "This will trigger your actions whenever a thread is modified.",
+            "parameters": [
+                {
+                    "id": "thread",
+                    "usrFriendly": "Modified thread from trigger",
+                    "type": "CHANNEL"
+                }
+            ]
+        },
+        {
+            "id": "threadMembersUpdate",
+            "usrFriendly": "When a member joins or leaves a thread",
+            "description": "This will trigger your actions whenever a member joins or leaves a thread.",
+            "parameters": [
+                {
+                    "id": "thread",
+                    "usrFriendly": "Thread from trigger",
+                    "type": "THREAD"
+                },
+                {
+                    "id": "added_members",
+                    "usrFriendly": "Added members from trigger",
+                    "type": "ARRAY<THREAD_MEMBER>"
+                }
+            ]
+        },
+        {
+            "id": "channelPinsUpdate",
+            "usrFriendly": "When a message is pinned or unpinned",
+            "description": "This will trigger your actions whenever a message is pinned or unpinned.",
+            "parameters": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Channel of pins from trigger",
+                    "type": "CHANNEL"
+                }
+            ]
+        },
+        {
+            "id": "guildUpdate",
+            "usrFriendly": "When the server's settings are changed",
+            "description": "This will trigger your actions whenever the server's settings are changed.",
+            "parameters": []
+        },
+        {
+            "id": "guildBanAdd",
+            "usrFriendly": "When a user is banned",
+            "description": "This will trigger your actions whenever a user is banned from the server.",
+            "parameters": [
+                {
+                    "id": "user",
+                    "usrFriendly": "Banned user from trigger",
+                    "type": "USER"
+                }
+            ]
+        },
+        {
+            "id": "guildBanRemove",
+            "usrFriendly": "When a user is unbanned",
+            "description": "This will trigger your actions whenever a user is unbanned from the server.",
+            "parameters": [
+                {
+                    "id": "user",
+                    "usrFriendly": "Unbanned user from trigger",
+                    "type": "USER"
+                }
+            ]
+        },
+        {
+            "id": "guildEmojisUpdate",
+            "usrFriendly": "When the server's emojis have been updated.",
+            "description": "This will trigger your actions whenever the server's emojis have been updated.",
+            "parameters": [
+                {
+                    "id": "emojis",
+                    "usrFriendly": "Emojis from trigger",
+                    "type": "ARRAY<EMOJI>"
+                }
+            ]
+        },
+        {
+            "id": "guildStickersUpdate",
+            "usrFriendly": "When the server's stickers have been updated",
+            "description": "This will trigger your actions whenever the server's stickers have been updated.",
+            "parameters": [
+                {
+                    "id": "stickers",
+                    "usrFriendly": "Stickers from trigger",
+                    "type": "ARRAY<STICKER>"
+                }
+            ]
+        },
+        {
+            "id": "guildIntegrationsUpdate",
+            "usrFriendly": "When the server's interactions are changed",
+            "description": "This will trigger your actions whenever a webhook, app, or other integraton is changed for the server.",
+            "parameters": []
+        },
+        {
+            "id": "guildMemberAdd",
+            "usrFriendly": "When a user joins the server",
+            "description": "This will trigger your actions whenever a user joins the server.",
+            "parameters": [
+                {
+                    "id": "member",
+                    "usrFriendly": "User from trigger",
+                    "type": "MEMBER"
+                }
+            ],
+            "intent": true
+        },
+        {
+            "id": "guildMemberRemove",
+            "usrFriendly": "When a member leaves the server",
+            "description": "This will trigger your actions whenever a member leaves the server.",
+            "parameters": [
+                {
+                    "id": "user",
+                    "usrFriendly": "Member from trigger",
+                    "type": "USER"
+                }
+            ],
+            "intent": true
+        },
+        {
+            "id": "guildMemberUpdate",
+            "usrFriendly": "When a user is changed",
+            "description": "This will trigger your actions whenever a user's status, avatar, roles, or other information are updated.",
+            "parameters": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Created channel from trigger",
+                    "type": "CHANNEL"
+                }
+            ],
+            "intent": true
+        },
+        {
+            "id": "guildRoleCreate",
+            "usrFriendly": "When a role is created",
+            "description": "This will trigger your actions whenever a role is created in the server.",
+            "parameters": [
+                {
+                    "id": "role",
+                    "usrFriendly": "Created role from trigger",
+                    "type": "ROLE"
+                }
+            ]
+        },
+        {
+            "id": "guildRoleUpdate",
+            "usrFriendly": "When a role is modified",
+            "description": "This will trigger your actions whenever a role is modified.",
+            "parameters": [
+                {
+                    "id": "role",
+                    "usrFriendly": "Modified role from trigger",
+                    "type": "ROLE"
+                }
+            ]
+        },
+        {
+            "id": "guildRoleDelete",
+            "usrFriendly": "When a role is created",
+            "description": "This will trigger your actions whenever a channel is created.",
+            "parameters": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Created channel from trigger",
+                    "type": "CHANNEL"
+                }
+            ]
+        },
+        {
+            "id": "guildScheduledEventCreate",
+            "usrFriendly": "When a server event is created",
+            "description": "This will trigger your actions whenever a server event is made.",
+            "parameters": [
+                {
+                    "id": "event",
+                    "usrFriendly": "Created event from trigger",
+                    "type": "SCHEDULED_EVENT"
+                }
+            ]
+        },
+        {
+            "id": "guildSchedledEventUpdate",
+            "usrFriendly": "When an event is modified.",
+            "description": "This will trigger your actions whenever a server event is modified in the server.",
+            "parameters": [
+                {
+                    "id": "event",
+                    "usrFriendly": "Modified event from trigger",
+                    "type": "SCHEDULED_EVENT"
+                }
+            ]
+        },
+        {
+            "id": "guildScheduledEventDelete",
+            "usrFriendly": "When an event is deleted",
+            "description": "This will trigger your actions whenever a server event is deleted from the server.",
+            "parameters": [
+                {
+                    "id": "event",
+                    "usrFriendly": "Deleted event from trigger",
+                    "type": "SCHEDULED_EVENT"
+                }
+            ]
+        },
+        {
+            "id": "guildScheduledEventUserAdd",
+            "usrFriendly": "When a user subscribes to a server event",
+            "description": "This will trigger your actions whenever a user marks themselves as interested in a server event.",
+            "parameters": [
+                {
+                    "id": "event",
+                    "usrFriendly": "Interesting event from trigger",
+                    "type": "SCHEDULED_EVENT"
+                },
+                {
+                    "id": "user",
+                    "usrFriendly": "User who subscribed",
+                    "type": "USER"
+                }
+            ]
+        },
+        {
+            "id": "guildScheduledEventUserRemove",
+            "usrFriendly": "When a user unsubscribes from a server event.",
+            "description": "This will trigger your actions whenever a user unmarks themselves as interested in a server event.",
+            "parameters": [
+                {
+                    "id": "event",
+                    "usrFriendly": "Uninteresting event from trigger",
+                    "type": "SCHEDULED_EVENT"
+                },
+                {
+                    "id": "user",
+                    "usrFriendly": "User who unsubscribed",
+                    "type": "USER"
+                }
+            ]
+        },
+        {
+            "id": "integrationCreate",
+            "usrFriendly": "When an integration is added",
+            "description": "This will trigger your actions whenever an integration is added.",
+            "parameters": [
+                {
+                    "id": "integration",
+                    "usrFriendly": "Created channel from trigger",
+                    "type": "INTEGRATION"
+                }
+            ]
+        },
+        {
+            "id": "integrationDelete",
+            "usrFriendly": "When an integration is deleted",
+            "description": "This will trigger your actions whenever an integration is deleted.",
+            "parameters": []
+        },
+        {
+            "id": "inviteCreate",
+            "usrFriendly": "When a server invite is created",
+            "description": "This will trigger your actions whenever someone creates a server invite link.",
+            "parameters": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Channel of invite link from trigger",
+                    "type": "CHANNEL"
+                },
+                {
+                    "id": "code",
+                    "usrFriendly": "Invite code from trigger",
+                    "type": "STRING"
+                },
+                {
+                    "id": "inviter",
+                    "usrFriendly": "User who created the invite link from trigger",
+                    "type": "USER"
+                },
+                {
+                    "id": "maxAge",
+                    "usrFriendly": "Seconds until invite from trigger expires",
+                    "type": "NUMBER"
+                },
+                {
+                    "id": "maxUses",
+                    "usrFriendly": "Max uses of the invite link from trigger",
+                    "type": "NUMBER"
+                },
+                {
+                    "id": "temporary",
+                    "usrFriendly": "Is invite link from trigger temporary",
+                    "type": "BOOLEAN"
+                },
+                {
+                    "id": "uses",
+                    "usrFriendly": "How many times the invite from trigger has been used",
+                    "type": "NUMBER"
+                }
+            ]
+        },
+        {
+            "id": "inviteDelete",
+            "usrFriendly": "When a server invite is deleted",
+            "description": "This will trigger your actions whenever a server invite is deleted.",
+            "parameters": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Channel of invite from trigger",
+                    "type": "CHANNEL"
+                },
+                {
+                    "id": "code",
+                    "usrFriendly": "Invite code from trigger",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "id": "messageCreate",
+            "usrFriendly": "When a message is sent",
+            "description": "This will trigger your actions whenever Bopper receives a message in the server",
+            "parameters": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Channel of message from trigger",
+                    "type": "CHANNEL"
+                },
+                {
+                    "id": "sender",
+                    "usrFriendly": "Author of message from trigger",
+                    "type": "MEMBER"
+                },
+                {
+                    "id": "message",
+                    "usrFriendly": "Message from trigger",
+                    "type": "MESSAGE"
+                }
+            ]
+        },
+        {
+            "id": "messageUpdate",
+            "usrFriendly": "When a message is edited",
+            "description": "This will trigger your actions whenever a message is edited.",
+            "parameters": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Channel of message from trigger",
+                    "type": "CHANNEL"
+                },
+                {
+                    "id": "sender",
+                    "usrFriendly": "Author of message from trigger",
+                    "type": "MEMBER"
+                },
+                {
+                    "id": "message",
+                    "usrFriendly": "Edited message from trigger",
+                    "type": "MESSAGE"
+                }
+            ]
+        },
+        {
+            "id": "messageDelete",
+            "usrFriendly": "When a message is deleted",
+            "description": "This will trigger your actions whenever a message is deleted.",
+            "parameters": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Channel of message from trigger",
+                    "type": "CHANNEL"
+                }
+            ]
+        },
+        {
+            "id": "messageReactionAdd",
+            "usrFriendly": "When a message is reacted to",
+            "description": "This will trigger your actions whenever a user reacts to a message.",
+            "parameters": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Channel of reacted message from trigger",
+                    "type": "CHANNEL"
+                },
+                {
+                    "id": "message",
+                    "usrFriendly": "Reacted message from trigger",
+                    "type": "MESSAGE"
+                },
+                {
+                    "id": "reaction",
+                    "usrFriendly": "Reaction from trigger",
+                    "type": "REACTION"
+                },
+                {
+                    "id": "user",
+                    "usrFriendly": "User who reacted from trigger",
+                    "type": "USER"
+                }
+            ]
+        },
+        {
+            "id": "messageReactionRemove",
+            "usrFriendly": "When a message is un-reacted from",
+            "description": "This will trigger your actions whenever a user un-reacts from a message.",
+            "parameters": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Channel of un-reacted message from trigger",
+                    "type": "CHANNEL"
+                },
+                {
+                    "id": "message",
+                    "usrFriendly": "Un-reacted message from trigger",
+                    "type": "MESSAGE"
+                },
+                {
+                    "id": "reaction",
+                    "usrFriendly": "Removed reaction from trigger",
+                    "type": "REACTION"
+                },
+                {
+                    "id": "user",
+                    "usrFriendly": "User who un-reacted from trigger",
+                    "type": "USER"
+                }
+            ]
+        },
+        {
+            "id": "messageReactionRemoveAll",
+            "usrFriendly": "When all reactions are removed from a message",
+            "description": "This will trigger your actions whenever a user explicitly removes all reactions from a message.",
+            "parameters": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Channel of un-reacted message from trigger",
+                    "type": "CHANNEL"
+                },
+                {
+                    "id": "message",
+                    "usrFriendly": "Un-reacted message from trigger",
+                    "type": "MESSAGE"
+                }
+            ]
+        },
+        {
+            "id": "voiceStateUpdate",
+            "usrFriendly": "When a voice state is changed",
+            "description": "This will trigger your actions whenever someone joins, leaves or moves voice channels.",
+            "parameters": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Voice channel from trigger",
+                    "type": "VOICE_CHANNEL"
+                },
+                {
+                    "id": "user",
+                    "usrFriendly": "Member from trigger",
+                    "type": "USER"
+                },
+                {
+                    "id": "deafened",
+                    "usrFriendly": "Is the member from trigger deafened",
+                    "type": "BOOLEAN"
+                },
+                {
+                    "id": "muted",
+                    "usrFriendly": "Is the member from trigger muted",
+                    "type": "BOOLEAN"
+                },
+                {
+                    "id": "selfDeaf",
+                    "usrFriendly": "Has the member from trigger deafened themselves",
+                    "type": "BOOLEAN"
+                },
+                {
+                    "id": "selfMute",
+                    "usrFriendly": "Has the member from trigger muted themselves",
+                    "type": "BOOLEAN"
+                },
+                {
+                    "id": "suppress",
+                    "usrFriendly": "Is the member from trigger suppressed",
+                    "type": "BOOLEAN"
+                },
+                {
+                    "id": "streaming",
+                    "usrFriendly": "Is the member from trigger watching a stream",
+                    "type": "BOOLEAN"
+                },
+                {
+                    "id": "selfStream",
+                    "usrFriendly": "Is the member from trigger streaming",
+                    "type": "BOOLEAN"
+                }
+            ]
+        }
+    ]
+}
