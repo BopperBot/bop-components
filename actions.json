@@ -13,7 +13,8 @@
                 {
                     "id": "channel",
                     "usrFriendly": "Channel",
-                    "type": "CHANNEL"
+                    "type": "CHANNEL",
+                    "tip": "To DM a user, use a user as the channel."
                 }
             ],
             "returns": [
@@ -56,7 +57,7 @@
         {
             "id": "messagePin",
             "usrFriendly": "Pin a Message",
-            "description": "Pins a given message.",
+            "description": "Pins a given message to its channel.",
             "parameters": [
                 {
                     "id": "message",
@@ -68,7 +69,7 @@
         {
             "id": "messageUnpin",
             "usrFriendly": "Unpin a Message",
-            "description": "Unpins a given message.",
+            "description": "Unpins a given message from its channel.",
             "parameters": [
                 {
                     "id": "message",
@@ -80,7 +81,7 @@
         {
             "id": "messageReactionAdd",
             "usrFriendly": "Add a Reaction",
-            "description": "Adds a reaction to a given message.",
+            "description": "Reacts to a given message.",
             "parameters": [
                 {
                     "id": "message",
@@ -97,7 +98,7 @@
         {
             "id": "messageReactionRemove",
             "usrFriendly": "Remove a Reaction",
-            "description": "Removes a reaction from a given message.",
+            "description": "Un-reacts to a given message.",
             "parameters": [
                 {
                     "id": "message",
@@ -711,6 +712,25 @@
                     "id": "item",
                     "usrFriendly": "Item",
                     "type": "ANY"
+                }
+            ]
+        },
+        {
+            "id": "createEmoji",
+            "usrFriendly": "Make an Emoji",
+            "description": "Creates an emoji from text.",
+            "parameters":[
+                {
+                    "id": "text",
+                    "usrFriendly": "Emoji",
+                    "type": "STRING"
+                }
+            ],
+            "returns" :[
+                {
+                    "id": "emoji",
+                    "usrFriendly": "Created emoji",
+                    "type": "EMOJI"
                 }
             ]
         }
