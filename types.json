@@ -1,0 +1,37 @@
+{
+    "types": [
+        {
+            "id": "STRING",
+            "usrFriendly": "Text",
+            "icon": "text_fields",
+            "castable": [
+                "ANY",
+                "NUMBER",
+                "MESSAGE",
+                "CHANNEL",
+                "EMOJI",
+                "BOOLEAN",
+                "DROPDOWN",
+                "ROLE",
+                "USER"
+            ]
+        },
+        {
+            "id": "NUMBER",
+            "usrFriendly": "Number",
+            "icon": "filter_1",
+            "castable": [
+                "ANY",
+                "STRING",
+                "NUMBER",
+                "MESSAGE",
+                "CHANNEL",
+                "USER",
+                "EMOJI",
+                "BOOLEAN",
+                "ROLE",
+                "USER"
+            ]
+        }
+    ]
+}
