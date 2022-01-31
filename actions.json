@@ -1,0 +1,718 @@
+{
+    "actions": [
+        {
+            "id": "messageSend",
+            "usrFriendly": "Send a Message",
+            "description": "Sends a given message in a given channel as Bopper.",
+            "parameters": [
+                {
+                    "id": "text",
+                    "usrFriendly": "Text",
+                    "type": "STRING"
+                },
+                {
+                    "id": "channel",
+                    "usrFriendly": "Channel",
+                    "type": "CHANNEL"
+                }
+            ],
+            "returns": [
+                {
+                    "id": "sentMessage",
+                    "usrFriendly": "Sent Message",
+                    "type": "MESSAGE"
+                }
+            ]
+        },
+        {
+            "id": "messageDelete",
+            "usrFriendly": "Delete a Message",
+            "description": "Deletes a given message.",
+            "parameters": [
+                {
+                    "id": "message",
+                    "usrFriendly": "Message",
+                    "type": "MESSAGE"
+                }
+            ]
+        },
+        {
+            "id": "messageEdit",
+            "usrFriendly": "Edit a Message",
+            "description": "Edits a given message.",
+            "parameters": [
+                {
+                    "id": "message",
+                    "usrFriendly": "Message",
+                    "type": "MESSAGE"
+                },
+                {
+                    "id": "text",
+                    "usrFriendly": "New Text",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "id": "messagePin",
+            "usrFriendly": "Pin a Message",
+            "description": "Pins a given message.",
+            "parameters": [
+                {
+                    "id": "message",
+                    "usrFriendly": "Message",
+                    "type": "MESSAGE"
+                }
+            ]
+        },
+        {
+            "id": "messageUnpin",
+            "usrFriendly": "Unpin a Message",
+            "description": "Unpins a given message.",
+            "parameters": [
+                {
+                    "id": "message",
+                    "usrFriendly": "Message",
+                    "type": "MESSAGE"
+                }
+            ]
+        },
+        {
+            "id": "messageReactionAdd",
+            "usrFriendly": "Add a Reaction",
+            "description": "Adds a reaction to a given message.",
+            "parameters": [
+                {
+                    "id": "message",
+                    "usrFriendly": "Message",
+                    "type": "MESSAGE"
+                },
+                {
+                    "id": "emoji",
+                    "usrFriendly": "Emoji",
+                    "type": "EMOJI"
+                }
+            ]
+        },
+        {
+            "id": "messageReactionRemove",
+            "usrFriendly": "Remove a Reaction",
+            "description": "Removes a reaction from a given message.",
+            "parameters": [
+                {
+                    "id": "message",
+                    "usrFriendly": "Message",
+                    "type": "MESSAGE"
+                },
+                {
+                    "id": "emoji",
+                    "usrFriendly": "Emoji",
+                    "type": "EMOJI"
+                }
+            ]
+        },
+        {
+            "id": "messageReactionRemoveAll",
+            "usrFriendly": "Remove All Reactions",
+            "description": "Removes all reactions of a certain emoji from a given message.",
+            "parameters": [
+                {
+                    "id": "message",
+                    "usrFriendly": "Message",
+                    "type": "MESSAGE"
+                },
+                {
+                    "id": "emoji",
+                    "usrFriendly": "Emoji",
+                    "type": "EMOJI"
+                }
+            ]
+        },
+        {
+            "id": "memberBan",
+            "usrFriendly": "Ban a Member",
+            "description": "Bans a given member from the server.",
+            "parameters": [
+                {
+                    "id": "member",
+                    "usrFriendly": "Member",
+                    "type": "MEMBER"
+                },
+                {
+                    "id": "reason",
+                    "usrFriendly": "Reason",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "id": "memberUnban",
+            "usrFriendly": "Unban a Member",
+            "description": "Unbans a given member from the server.",
+            "parameters": [
+                {
+                    "id": "member",
+                    "usrFriendly": "Member",
+                    "type": "MEMBER"
+                }
+            ]
+        },
+        {
+            "id": "memberKick",
+            "usrFriendly": "Kick a Member",
+            "description": "Kicks a given member from the server.",
+            "parameters": [
+                {
+                    "id": "member",
+                    "usrFriendly": "Member",
+                    "type": "MEMBER"
+                },
+                {
+                    "id": "reason",
+                    "usrFriendly": "Reason",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "id": "memberTimeout",
+            "usrFriendly": "Time out a Member",
+            "description": "Times out a given member in the server for a given time.",
+            "parameters": [
+                {
+                    "id": "member",
+                    "usrFriendly": "Member",
+                    "type": "MEMBER"
+                },
+                {
+                    "id": "time",
+                    "usrFriendly": "Time (in seconds)",
+                    "type": "NUMBER"
+                },
+                {
+                    "id": "reason",
+                    "usrFriendly": "Reason",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "id": "memberTimeoutRemove",
+            "usrFriendly": "Remove a Member's Timeout",
+            "description": "Removes a given member's timeout for the server.",
+            "parameters": [
+                {
+                    "id": "member",
+                    "usrFriendly": "Member",
+                    "type": "MEMBER"
+                }
+            ]
+        },
+        {
+            "id": "memberMove",
+            "usrFriendly": "Move a Member",
+            "description": "Moves a given member to a given voice channel.",
+            "parameters": [
+                {
+                    "id": "member",
+                    "usrFriendly": "Member",
+                    "type": "MEMBER"
+                },
+                {
+                    "id": "channel",
+                    "usrFriendly": "Channel",
+                    "type": "CHANNEL"
+                }
+            ]
+        },
+        {
+            "id": "memberAddRole",
+            "usrFriendly": "Add a Role to a Member",
+            "description": "Adds a given role to a given member.",
+            "parameters": [
+                {
+                    "id": "member",
+                    "usrFriendly": "Member",
+                    "type": "MEMBER"
+                },
+                {
+                    "id": "role",
+                    "usrFriendly": "Role",
+                    "type": "ROLE"
+                }
+            ]
+        },
+        {
+            "id": "memberRemoveRole",
+            "usrFriendly": "Remove a Role from a Member",
+            "description": "Removes a given role from a given member.",
+            "parameters": [
+                {
+                    "id": "member",
+                    "usrFriendly": "Member",
+                    "type": "MEMBER"
+                },
+                {
+                    "id": "role",
+                    "usrFriendly": "Role",
+                    "type": "ROLE"
+                }
+            ]
+        },
+        {
+            "id": "roleCreate",
+            "usrFriendly": "Create a Role",
+            "description": "Creates a new role in the server.",
+            "parameters": [
+                {
+                    "id": "name",
+                    "usrFriendly": "Name",
+                    "type": "STRING"
+                }
+            ],
+            "returns": [
+                {
+                    "id": "role",
+                    "usrFriendly": "Created Role",
+                    "type": "ROLE"
+                }
+            ]
+        },
+        {
+            "id": "roleDelete",
+            "usrFriendly": "Delete a Role",
+            "description": "Deletes a given role from the server.",
+            "parameters": [
+                {
+                    "id": "role",
+                    "usrFriendly": "Role",
+                    "type": "ROLE"
+                }
+            ]
+        },
+        {
+            "id": "roleMemberAdd",
+            "usrFriendly": "Give a Role to a Member",
+            "description": "Gives a given role to a given member.",
+            "parameters": [
+                {
+                    "id": "member",
+                    "usrFriendly": "Member",
+                    "type": "MEMBER"
+                },
+                {
+                    "id": "role",
+                    "usrFriendly": "Role",
+                    "type": "ROLE"
+                }
+            ]
+        },
+        {
+            "id": "roleMemberRemove",
+            "usrFriendly": "Remove a Role from a Member",
+            "description": "Removes a given role from a given member.",
+            "parameters": [
+                {
+                    "id": "member",
+                    "usrFriendly": "Member",
+                    "type": "MEMBER"
+                },
+                {
+                    "id": "role",
+                    "usrFriendly": "Role",
+                    "type": "ROLE"
+                }
+            ]
+        },
+        {
+            "id": "textChannelCreate",
+            "usrFriendly": "Create a Text Channel",
+            "description": "Creates a new text channel in the server.",
+            "parameters": [
+                {
+                    "id": "name",
+                    "usrFriendly": "Name",
+                    "type": "STRING"
+                },
+                {
+                    "id": "topic",
+                    "usrFriendly": "Description",
+                    "type": "STRING"
+                },
+                {
+                    "id": "nsfw",
+                    "usrFriendly": "NSFW",
+                    "type": "BOOLEAN"
+                },
+                {
+                    "id": "location",
+                    "usrFriendly": "Location (Below this channel)",
+                    "type": "CHANNEL"
+                }
+            ],
+            "returns": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Created Channel",
+                    "type": "CHANNEL"
+                }
+            ]
+        },
+        {
+            "id": "channelDelete",
+            "usrFriendly": "Delete a Channel",
+            "description": "Deletes a given channel from the server.",
+            "parameters": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Channel",
+                    "type": "CHANNEL"
+                }
+            ]
+        },
+        {
+            "id": "channelEdit",
+            "usrFriendly": "Edit a Channel",
+            "description": "Edits a given channel in the server.",
+            "parameters": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Channel",
+                    "type": "CHANNEL"
+                },
+                {
+                    "id": "name",
+                    "usrFriendly": "Name",
+                    "type": "STRING"
+                },
+                {
+                    "id": "topic",
+                    "usrFriendly": "Description",
+                    "type": "STRING"
+                },
+                {
+                    "id": "nsfw",
+                    "usrFriendly": "NSFW",
+                    "type": "BOOLEAN"
+                }
+            ]
+        },
+        {
+            "id": "channelMove",
+            "usrFriendly": "Move a Channel",
+            "description": "Moves a given channel to a given location.",
+            "parameters": [
+                {
+                    "id": "channel",
+                    "usrFriendly": "Channel",
+                    "type": "CHANNEL"
+                },
+                {
+                    "id": "location",
+                    "usrFriendly": "Location (Below this channel)",
+                    "type": "CHANNEL"
+                }
+            ]
+        },
+        {
+            "id": "scheduledEventCreate",
+            "usrFriendly": "Create a Server Event",
+            "description": "Creates a new event in the server.",
+            "parameters": [
+                {
+                    "id": "topic",
+                    "usrFriendly": "Topic",
+                    "type": "STRING"
+                },
+                {
+                    "id": "description",
+                    "usrFriendly": "Description",
+                    "type": "STRING"
+                },
+                {
+                    "id": "start",
+                    "usrFriendly": "Start Date",
+                    "type": "DATE"
+                },
+                {
+                    "id": "end",
+                    "usrFriendly": "End Date",
+                    "type": "DATE"
+                },
+                {
+                    "id": "location",
+                    "usrFriendly": "Location",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "id": "scheduledEventDelete",
+            "usrFriendly": "Delete a Server Event",
+            "description": "Deletes a given event from the server.",
+            "parameters": [
+                {
+                    "id": "event",
+                    "usrFriendly": "Event",
+                    "type": "EVENT"
+                }
+            ]
+        },
+        {
+            "id": "scheduledEventEdit",
+            "usrFriendly": "Edit a Server Event",
+            "description": "Edits a given event in the server.",
+            "parameters": [
+                {
+                    "id": "event",
+                    "usrFriendly": "Event",
+                    "type": "EVENT"
+                },
+                {
+                    "id": "topic",
+                    "usrFriendly": "Topic",
+                    "type": "STRING"
+                },
+                {
+                    "id": "description",
+                    "usrFriendly": "Description",
+                    "type": "STRING"
+                },
+                {
+                    "id": "start",
+                    "usrFriendly": "Start Date",
+                    "type": "DATE"
+                },
+                {
+                    "id": "end",
+                    "usrFriendly": "End Date",
+                    "type": "DATE"
+                },
+                {
+                    "id": "location",
+                    "usrFriendly": "Location",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "id": "createDate",
+            "usrFriendly": "Make a Date",
+            "description": "Creates a new date to be accessed later in the Bop.",
+            "parameters": [
+                {
+                    "id": "year",
+                    "usrFriendly": "Year",
+                    "type": "NUMBER"
+                },
+                {
+                    "id": "month",
+                    "usrFriendly": "Month",
+                    "type": "NUMBER"
+                },
+                {
+                    "id": "day",
+                    "usrFriendly": "Day",
+                    "type": "NUMBER"
+                },
+                {
+                    "id": "hour",
+                    "usrFriendly": "Hour",
+                    "type": "NUMBER"
+                },
+                {
+                    "id": "minute",
+                    "usrFriendly": "Minute",
+                    "type": "NUMBER"
+                }
+            ],
+            "returns": [
+                {
+                    "id": "date",
+                    "usrFriendly": "Created Date",
+                    "type": "DATE"
+                }
+            ]
+        },
+        {
+            "id": "labelStore",
+            "usrFriendly": "Store a Label",
+            "description": "Store a value that can be changed and accessed later in the Bop.",
+            "parameters": [
+                {
+                    "id": "key",
+                    "usrFriendly": "Label Name",
+                    "type": "STRING"
+                },
+                {
+                    "id": "value",
+                    "usrFriendly": "Label Value",
+                    "type": "ANY"
+                }
+            ]
+        },
+        {
+            "id": "labelModify",
+            "usrFriendly": "Modify a Label",
+            "description": "Modify a value that has been stored earlier in the Bop.",
+            "parameters": [
+                {
+                    "id": "label",
+                    "usrFriendly": "Label",
+                    "type": "LABEL"
+                },
+                {
+                    "id": "value",
+                    "usrFriendly": "New Value",
+                    "type": "ANY"
+                }
+            ]
+        },
+        {
+            "id": "math2",
+            "usrFriendly": "Mathematical Operation on 2 Numbers",
+            "description": "Performs a mathematical operation on two numbers.",
+            "parameters": [
+                {
+                    "id": "operation",
+                    "usrFriendly": "Operation",
+                    "type": "DROPDOWN",
+                    "dropdownOptions": [
+                        "Addition",
+                        "Subtraction",
+                        "Multiplication",
+                        "Division",
+                        "Modulus",
+                        "Exponent",
+                        "Root",
+                        "Logarithm"
+                    ]
+                },
+                {
+                    "id": "number1",
+                    "usrFriendly": "Number 1",
+                    "type": "NUMBER"
+                },
+                {
+                    "id": "number2",
+                    "usrFriendly": "Number 2",
+                    "type": "NUMBER"
+                }
+            ],
+            "returns": [
+                {
+                    "id": "result",
+                    "usrFriendly": "Result",
+                    "type": "NUMBER"
+                }
+            ]
+        },
+        {
+            "id": "math1",
+            "usrFriendly": "Mathematical Operation on 1 Number",
+            "description": "Performs a mathematical operation on one number.",
+            "parameters": [
+                {
+                    "id": "operation",
+                    "usrFriendly": "Operation",
+                    "type": "DROPDOWN",
+                    "dropdownOptions": [
+                        "Square Root",
+                        "Square",
+                        "Cube",
+                        "Cube Root",
+                        "Logarithm",
+                        "Natural Logarithm",
+                        "Exponent",
+                        "Absolute Value",
+                        "Negate",
+                        "Inverse",
+                        "Sine",
+                        "Cosine",
+                        "Tangent",
+                        "Round",
+                        "Floor",
+                        "Ceiling"
+                    ]
+                },
+                {
+                    "id": "number",
+                    "usrFriendly": "Number",
+                    "type": "NUMBER"
+                }
+            ]
+        },
+        {
+            "id": "simplifyExpression",
+            "usrFriendly": "Evaluate an Expression",
+            "description": "Evaluates an expression and returns the result.",
+            "parameters": [
+                {
+                    "id": "expression",
+                    "usrFriendly": "Expression",
+                    "type": "STRING"
+                }
+            ],
+            "returns": [
+                {
+                    "id": "result",
+                    "usrFriendly": "Result",
+                    "type": "NUMBER"
+                }
+            ]
+        },
+        {
+            "id": "switch",
+            "usrFriendly": "Switch Values",
+            "description": "Switches between two values based on a condition.",
+            "parameters": [
+                {
+                    "id": "condition",
+                    "usrFriendly": "Condition",
+                    "type": "BOOLEAN"
+                },
+                {
+                    "id": "value1",
+                    "usrFriendly": "When True",
+                    "type": "ANY"
+                },
+                {
+                    "id": "value2",
+                    "usrFriendly": "When False",
+                    "type": "ANY"
+                }
+            ],
+            "returns": [
+                {
+                    "id": "result",
+                    "usrFriendly": "Result",
+                    "type": "ANY"
+                }
+            ]
+        },
+        {
+            "id": "getArrayItem",
+            "usrFriendly": "Get Item in List",
+            "description": "Gets an item from a list based on an index.",
+            "parameters": [
+                {
+                    "id": "array",
+                    "usrFriendly": "List",
+                    "type": "ARRAY"
+                },
+                {
+                    "id": "index",
+                    "usrFriendly": "Index",
+                    "type": "NUMBER"
+                }
+            ],
+            "returns": [
+                {
+                    "id": "item",
+                    "usrFriendly": "Item",
+                    "type": "ANY"
+                }
+            ]
+        }
+    ]
+}
