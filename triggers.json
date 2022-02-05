@@ -301,7 +301,7 @@
             "parameters": [
                 {
                     "id": "integration",
-                    "usrFriendly": "Created channel",
+                    "usrFriendly": "Added integration",
                     "type": "INTEGRATION"
                 }
             ]
