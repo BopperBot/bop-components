@@ -145,7 +145,7 @@
         },
         {
             "id": "guildIntegrationsUpdate",
-            "usrFriendly": "When the server's interactions are changed",
+            "usrFriendly": "When the server's integrations are changed",
             "description": "This will trigger your actions whenever a webhook, app, or other integraton is changed for the server.",
             "parameters": []
         },
