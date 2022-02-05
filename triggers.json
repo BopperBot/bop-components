@@ -7,7 +7,7 @@
             "parameters": [
                 {
                     "id": "channel",
-                    "usrFriendly": "Created channel from trigger",
+                    "usrFriendly": "Created channel",
                     "type": "CHANNEL"
                 }
             ]
@@ -19,7 +19,7 @@
             "parameters": [
                 {
                     "id": "channel",
-                    "usrFriendly": "Modified channel from trigger",
+                    "usrFriendly": "Modified channel",
                     "type": "CHANNEL"
                 }
             ]
@@ -31,7 +31,7 @@
             "parameters": [
                 {
                     "id": "channel",
-                    "usrFriendly": "Deleted channel from trigger",
+                    "usrFriendly": "Deleted channel",
                     "type": "CHANNEL"
                 }
             ]
@@ -43,7 +43,7 @@
             "parameters": [
                 {
                     "id": "thread",
-                    "usrFriendly": "Created thread from trigger",
+                    "usrFriendly": "Created thread",
                     "type": "CHANNEL"
                 }
             ]
@@ -55,7 +55,7 @@
             "parameters": [
                 {
                     "id": "thread",
-                    "usrFriendly": "Modified thread from trigger",
+                    "usrFriendly": "Modified thread",
                     "type": "CHANNEL"
                 }
             ]
@@ -67,12 +67,12 @@
             "parameters": [
                 {
                     "id": "thread",
-                    "usrFriendly": "Thread from trigger",
+                    "usrFriendly": "Thread",
                     "type": "THREAD"
                 },
                 {
                     "id": "added_members",
-                    "usrFriendly": "Added members from trigger",
+                    "usrFriendly": "Added members",
                     "type": "ARRAY<THREAD_MEMBER>"
                 }
             ]
@@ -84,7 +84,7 @@
             "parameters": [
                 {
                     "id": "channel",
-                    "usrFriendly": "Channel of pins from trigger",
+                    "usrFriendly": "Channel of pins",
                     "type": "CHANNEL"
                 }
             ]
@@ -102,7 +102,7 @@
             "parameters": [
                 {
                     "id": "user",
-                    "usrFriendly": "Banned user from trigger",
+                    "usrFriendly": "Banned user",
                     "type": "USER"
                 }
             ]
@@ -114,7 +114,7 @@
             "parameters": [
                 {
                     "id": "user",
-                    "usrFriendly": "Unbanned user from trigger",
+                    "usrFriendly": "Unbanned user",
                     "type": "USER"
                 }
             ]
@@ -126,7 +126,7 @@
             "parameters": [
                 {
                     "id": "emojis",
-                    "usrFriendly": "Emojis from trigger",
+                    "usrFriendly": "Emojis",
                     "type": "ARRAY<EMOJI>"
                 }
             ]
@@ -138,7 +138,7 @@
             "parameters": [
                 {
                     "id": "stickers",
-                    "usrFriendly": "Stickers from trigger",
+                    "usrFriendly": "Stickers",
                     "type": "ARRAY<STICKER>"
                 }
             ]
@@ -156,7 +156,7 @@
             "parameters": [
                 {
                     "id": "member",
-                    "usrFriendly": "User from trigger",
+                    "usrFriendly": "User",
                     "type": "USER"
                 }
             ],
@@ -169,7 +169,7 @@
             "parameters": [
                 {
                     "id": "user",
-                    "usrFriendly": "Member from trigger",
+                    "usrFriendly": "Member",
                     "type": "USER"
                 }
             ],
@@ -182,7 +182,7 @@
             "parameters": [
                 {
                     "id": "channel",
-                    "usrFriendly": "Created channel from trigger",
+                    "usrFriendly": "Created channel",
                     "type": "CHANNEL"
                 }
             ],
@@ -195,7 +195,7 @@
             "parameters": [
                 {
                     "id": "role",
-                    "usrFriendly": "Created role from trigger",
+                    "usrFriendly": "Created role",
                     "type": "ROLE"
                 }
             ]
@@ -207,7 +207,7 @@
             "parameters": [
                 {
                     "id": "role",
-                    "usrFriendly": "Modified role from trigger",
+                    "usrFriendly": "Modified role",
                     "type": "ROLE"
                 }
             ]
@@ -219,7 +219,7 @@
             "parameters": [
                 {
                     "id": "channel",
-                    "usrFriendly": "Created channel from trigger",
+                    "usrFriendly": "Created channel",
                     "type": "CHANNEL"
                 }
             ]
@@ -231,7 +231,7 @@
             "parameters": [
                 {
                     "id": "event",
-                    "usrFriendly": "Created event from trigger",
+                    "usrFriendly": "Created event",
                     "type": "SCHEDULED_EVENT"
                 }
             ]
@@ -243,7 +243,7 @@
             "parameters": [
                 {
                     "id": "event",
-                    "usrFriendly": "Modified event from trigger",
+                    "usrFriendly": "Modified event",
                     "type": "SCHEDULED_EVENT"
                 }
             ]
@@ -255,7 +255,7 @@
             "parameters": [
                 {
                     "id": "event",
-                    "usrFriendly": "Deleted event from trigger",
+                    "usrFriendly": "Deleted event",
                     "type": "SCHEDULED_EVENT"
                 }
             ]
@@ -267,7 +267,7 @@
             "parameters": [
                 {
                     "id": "event",
-                    "usrFriendly": "Interesting event from trigger",
+                    "usrFriendly": "Interesting event",
                     "type": "SCHEDULED_EVENT"
                 },
                 {
@@ -284,7 +284,7 @@
             "parameters": [
                 {
                     "id": "event",
-                    "usrFriendly": "Uninteresting event from trigger",
+                    "usrFriendly": "Uninteresting event",
                     "type": "SCHEDULED_EVENT"
                 },
                 {
@@ -301,7 +301,7 @@
             "parameters": [
                 {
                     "id": "integration",
-                    "usrFriendly": "Created channel from trigger",
+                    "usrFriendly": "Created channel",
                     "type": "INTEGRATION"
                 }
             ]
@@ -319,37 +319,37 @@
             "parameters": [
                 {
                     "id": "channel",
-                    "usrFriendly": "Channel of invite link from trigger",
+                    "usrFriendly": "Channel of invite link",
                     "type": "CHANNEL"
                 },
                 {
                     "id": "code",
-                    "usrFriendly": "Invite code from trigger",
+                    "usrFriendly": "Invite code",
                     "type": "STRING"
                 },
                 {
                     "id": "inviter",
-                    "usrFriendly": "User who created the invite link from trigger",
+                    "usrFriendly": "User who created the invite link",
                     "type": "USER"
                 },
                 {
                     "id": "maxAge",
-                    "usrFriendly": "Seconds until invite from trigger expires",
+                    "usrFriendly": "Seconds until invite expires",
                     "type": "NUMBER"
                 },
                 {
                     "id": "maxUses",
-                    "usrFriendly": "Max uses of the invite link from trigger",
+                    "usrFriendly": "Max uses of the invite link",
                     "type": "NUMBER"
                 },
                 {
                     "id": "temporary",
-                    "usrFriendly": "Is invite link from trigger temporary",
+                    "usrFriendly": "Is invite link temporary",
                     "type": "BOOLEAN"
                 },
                 {
                     "id": "uses",
-                    "usrFriendly": "How many times the invite from trigger has been used",
+                    "usrFriendly": "How many times the invite has been used",
                     "type": "NUMBER"
                 }
             ]
@@ -361,12 +361,12 @@
             "parameters": [
                 {
                     "id": "channel",
-                    "usrFriendly": "Channel of invite from trigger",
+                    "usrFriendly": "Channel of invite",
                     "type": "CHANNEL"
                 },
                 {
                     "id": "code",
-                    "usrFriendly": "Invite code from trigger",
+                    "usrFriendly": "Invite code",
                     "type": "STRING"
                 }
             ]
@@ -378,17 +378,17 @@
             "parameters": [
                 {
                     "id": "channel",
-                    "usrFriendly": "Channel of message from trigger",
+                    "usrFriendly": "Channel of message",
                     "type": "CHANNEL"
                 },
                 {
                     "id": "sender",
-                    "usrFriendly": "Author of message from trigger",
+                    "usrFriendly": "Author of message",
                     "type": "USER"
                 },
                 {
                     "id": "message",
-                    "usrFriendly": "Message from trigger",
+                    "usrFriendly": "Message",
                     "type": "MESSAGE"
                 }
             ]
@@ -400,17 +400,17 @@
             "parameters": [
                 {
                     "id": "channel",
-                    "usrFriendly": "Channel of message from trigger",
+                    "usrFriendly": "Channel of message",
                     "type": "CHANNEL"
                 },
                 {
                     "id": "sender",
-                    "usrFriendly": "Author of message from trigger",
+                    "usrFriendly": "Author of message",
                     "type": "USER"
                 },
                 {
                     "id": "message",
-                    "usrFriendly": "Edited message from trigger",
+                    "usrFriendly": "Edited message",
                     "type": "MESSAGE"
                 }
             ]
@@ -422,7 +422,7 @@
             "parameters": [
                 {
                     "id": "channel",
-                    "usrFriendly": "Channel of message from trigger",
+                    "usrFriendly": "Channel of message",
                     "type": "CHANNEL"
                 }
             ]
@@ -434,22 +434,22 @@
             "parameters": [
                 {
                     "id": "channel",
-                    "usrFriendly": "Channel of reacted message from trigger",
+                    "usrFriendly": "Channel of reacted message",
                     "type": "CHANNEL"
                 },
                 {
                     "id": "message",
-                    "usrFriendly": "Reacted message from trigger",
+                    "usrFriendly": "Reacted message",
                     "type": "MESSAGE"
                 },
                 {
                     "id": "reaction",
-                    "usrFriendly": "Reaction from trigger",
+                    "usrFriendly": "Reaction",
                     "type": "REACTION"
                 },
                 {
                     "id": "user",
-                    "usrFriendly": "User who reacted from trigger",
+                    "usrFriendly": "User who reacted",
                     "type": "USER"
                 }
             ]
@@ -461,22 +461,22 @@
             "parameters": [
                 {
                     "id": "channel",
-                    "usrFriendly": "Channel of un-reacted message from trigger",
+                    "usrFriendly": "Channel of un-reacted message",
                     "type": "CHANNEL"
                 },
                 {
                     "id": "message",
-                    "usrFriendly": "Un-reacted message from trigger",
+                    "usrFriendly": "Un-reacted message",
                     "type": "MESSAGE"
                 },
                 {
                     "id": "reaction",
-                    "usrFriendly": "Removed reaction from trigger",
+                    "usrFriendly": "Removed reaction",
                     "type": "REACTION"
                 },
                 {
                     "id": "user",
-                    "usrFriendly": "User who un-reacted from trigger",
+                    "usrFriendly": "User who un-reacted",
                     "type": "USER"
                 }
             ]
@@ -488,12 +488,12 @@
             "parameters": [
                 {
                     "id": "channel",
-                    "usrFriendly": "Channel of un-reacted message from trigger",
+                    "usrFriendly": "Channel of un-reacted message",
                     "type": "CHANNEL"
                 },
                 {
                     "id": "message",
-                    "usrFriendly": "Un-reacted message from trigger",
+                    "usrFriendly": "Un-reacted message",
                     "type": "MESSAGE"
                 }
             ]
@@ -505,47 +505,47 @@
             "parameters": [
                 {
                     "id": "channel",
-                    "usrFriendly": "Voice channel from trigger",
+                    "usrFriendly": "Voice channel",
                     "type": "VOICE_CHANNEL"
                 },
                 {
                     "id": "user",
-                    "usrFriendly": "Member from trigger",
+                    "usrFriendly": "Member",
                     "type": "USER"
                 },
                 {
                     "id": "deafened",
-                    "usrFriendly": "Is the member from trigger deafened by anothe member",
+                    "usrFriendly": "Is the member deafened by anothe member",
                     "type": "BOOLEAN"
                 },
                 {
                     "id": "muted",
-                    "usrFriendly": "Is the member from trigger muted by another member",
+                    "usrFriendly": "Is the member muted by another member",
                     "type": "BOOLEAN"
                 },
                 {
                     "id": "selfDeaf",
-                    "usrFriendly": "Has the member from trigger deafened themselves",
+                    "usrFriendly": "Has the member deafened themselves",
                     "type": "BOOLEAN"
                 },
                 {
                     "id": "selfMute",
-                    "usrFriendly": "Has the member from trigger muted themselves",
+                    "usrFriendly": "Has the member muted themselves",
                     "type": "BOOLEAN"
                 },
                 {
                     "id": "suppress",
-                    "usrFriendly": "Is the member from trigger suppressed",
+                    "usrFriendly": "Is the member suppressed",
                     "type": "BOOLEAN"
                 },
                 {
                     "id": "streaming",
-                    "usrFriendly": "Is the member from trigger streaming",
+                    "usrFriendly": "Is the member streaming",
                     "type": "BOOLEAN"
                 },
                 {
                     "id": "video",
-                    "usrFriendly": "Does the member from trigger have their camera on",
+                    "usrFriendly": "Does the member have their camera on",
                     "type": "BOOLEAN"
                 }
             ]
@@ -557,12 +557,12 @@
             "parameters": [
                 {
                     "id": "user",
-                    "usrFriendly": "User who pressed the button from trigger",
+                    "usrFriendly": "User who pressed the button",
                     "type": "USER"
                 },
                 {
                     "id": "name",
-                    "usrFriendly": "Label of the button from trigger",
+                    "usrFriendly": "Label of the button",
                     "type": "STRING"
                 }
             ]
@@ -574,7 +574,7 @@
             "parameters": [
                 {
                     "id": "command",
-                    "usrFriendly": "Sent command from trigger",
+                    "usrFriendly": "Sent command",
                     "type": "STRING"
                 }
             ]
