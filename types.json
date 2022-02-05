@@ -127,6 +127,7 @@
         {
             "id": "INTEGRATION",
             "usrFriendly": "Integration",
+            "icon": "code",
             "castable": [
                 "ANY"
             ]
@@ -139,6 +140,23 @@
                 "STRING",
                 "ARRAY<USER>",
                 "NUMBER"
+            ]
+        },
+        {
+            "id": "STICKER",
+            "usrFriendly": "Sticker",
+            "icon": "insert_drive_file",
+            "castable": [
+                "ANY"
+            ]
+        },
+        {
+            "id": "THREAD_MEMBER",
+            "usrFriendly": "Thread Member",
+            "icon": "person_add",
+            "castable": [
+                "USER",
+                "ANY"
             ]
         }
     ]
