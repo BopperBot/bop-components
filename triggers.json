@@ -329,7 +329,7 @@
                 },
                 {
                     "id": "inviter",
-                    "usrFriendly": "User who created the invite link",
+                    "usrFriendly": "User who created the invite",
                     "type": "USER"
                 },
                 {
@@ -515,7 +515,7 @@
                 },
                 {
                     "id": "deafened",
-                    "usrFriendly": "Is the member deafened by anothe member",
+                    "usrFriendly": "Is member deafened by admin",
                     "type": "BOOLEAN"
                 },
                 {
