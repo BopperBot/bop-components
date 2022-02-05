@@ -32,6 +32,114 @@
                 "ROLE",
                 "USER"
             ]
+        },
+        {
+            "id": "USER",
+            "usrFriendly": "User",
+            "icon": "person",
+            "castable": [
+                "NUMBER",
+                "CHANNEL",
+                "STRING",
+                "ARRAY<ROLE>",
+                "ANY"
+            ]
+        },
+        {
+            "id": "MESSAGE",
+            "usrFriendly": "Message",
+            "icon": "chat_bubble",
+            "castable": [
+                "NUMBER",
+                "CHANNEL",
+                "STRING",
+                "USER",
+                "ANY"
+            ]
+        },
+        {
+            "id": "ROLE",
+            "usrFriendly": "Role",
+            "icon": "admin_panel_settings",
+            "castable": [
+                "NUMBER",
+                "ANY",
+                "STRING"
+            ]
+        },
+        {
+            "id": "CHANNEL",
+            "usrFriendly": "Channel",
+            "icon": "tag",
+            "castable": [
+                "ANY",
+                "STRING",
+                "NUMBER"
+            ]
+        },
+        {
+            "id": "BOOLEAN",
+            "usrFriendly": "True/False",
+            "icon": "toggle_on",
+            "castable": [
+                "ANY"
+            ]
+        },
+        {
+            "id": "EMOJI",
+            "usrFriendly": "Emoji",
+            "icon": "emoji_emotions",
+            "castable": [
+                "ANY",
+                "STRING"
+            ]
+        },
+        {
+            "id": "DROPDOWN",
+            "usrFriendly": "Dropdown",
+            "icon": "expand_more",
+            "castable": [
+                "STRING",
+                "NUMBER",
+                "ANY"
+            ]
+        },
+        {
+            "id": "VOICE_CHANNEL",
+            "usrFriendly": "Voice Channel",
+            "icon": "volume_up",
+            "castable": [
+                "ANY",
+                "NUMBER",
+                "STRING"
+            ]
+        },
+        {
+            "id": "REACTION",
+            "usrFriendly": "Reaction",
+            "icon": "thumbs_up_down",
+            "castable": [
+                "EMOJI",
+                "USER",
+                "ANY"
+            ]
+        },
+        {
+            "id": "INTEGRATION",
+            "usrFriendly": "Integration",
+            "castable": [
+                "ANY"
+            ]
+        },
+        {
+            "id": "SCHEDULED_EVENT",
+            "usrFriendly": "Server Event",
+            "icon": "today",
+            "castable": [
+                "STRING",
+                "ARRAY<USER>",
+                "NUMBER"
+            ]
         }
     ]
 }

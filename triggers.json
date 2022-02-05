@@ -157,7 +157,7 @@
                 {
                     "id": "member",
                     "usrFriendly": "User from trigger",
-                    "type": "MEMBER"
+                    "type": "USER"
                 }
             ],
             "intent": true
@@ -384,7 +384,7 @@
                 {
                     "id": "sender",
                     "usrFriendly": "Author of message from trigger",
-                    "type": "MEMBER"
+                    "type": "USER"
                 },
                 {
                     "id": "message",
@@ -406,7 +406,7 @@
                 {
                     "id": "sender",
                     "usrFriendly": "Author of message from trigger",
-                    "type": "MEMBER"
+                    "type": "USER"
                 },
                 {
                     "id": "message",
