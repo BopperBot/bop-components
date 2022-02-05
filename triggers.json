@@ -570,7 +570,14 @@
         {
             "id": "commandSent",
             "usrFriendly": "When a custom command is sent",
-            "description": "This will trigger your actions whenever a user sends a custom command."
+            "description": "This will trigger your actions whenever a user sends a custom command.",
+            "parameters": [
+                {
+                    "id": "command",
+                    "usrFriendly": "Sent command from trigger",
+                    "type": "STRING"
+                }
+            ]
         }
     ]
 }
