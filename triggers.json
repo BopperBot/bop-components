@@ -68,7 +68,7 @@
                 {
                     "id": "thread",
                     "usrFriendly": "Thread",
-                    "type": "THREAD"
+                    "type": "CHANNEL"
                 },
                 {
                     "id": "added_members",

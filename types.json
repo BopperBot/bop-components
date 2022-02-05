@@ -158,6 +158,23 @@
                 "USER",
                 "ANY"
             ]
+        },
+        {
+            "id": "ARRAY<?>",
+            "usrFriendly": "Array of %s",
+            "icon": "layers",
+            "castable": [
+                "NUMBER",
+                "ANY"
+            ]
+        },
+        {
+            "id": "ANY",
+            "usrFriendly": "Any",
+            "icon": "help_center",
+            "castable": [
+                "*"
+            ]
         }
     ]
 }
