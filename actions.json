@@ -455,7 +455,7 @@
                 {
                     "id": "event",
                     "usrFriendly": "Event",
-                    "type": "EVENT"
+                    "type": "SCHEDULED_EVENT"
                 }
             ]
         },
@@ -467,7 +467,7 @@
                 {
                     "id": "event",
                     "usrFriendly": "Event",
-                    "type": "EVENT"
+                    "type": "SCHEDULED_EVENT"
                 },
                 {
                     "id": "topic",
