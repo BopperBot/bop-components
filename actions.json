@@ -217,7 +217,7 @@
                 {
                     "id": "user",
                     "usrFriendly": "User",
-                    "type": "user"
+                    "type": "USER"
                 },
                 {
                     "id": "channel",
@@ -233,8 +233,8 @@
             "parameters": [
                 {
                     "id": "user",
-                    "usrFriendly": "user",
-                    "type": "user"
+                    "usrFriendly": "User",
+                    "type": "USER"
                 },
                 {
                     "id": "role",
@@ -250,8 +250,8 @@
             "parameters": [
                 {
                     "id": "user",
-                    "usrFriendly": "user",
-                    "type": "user"
+                    "usrFriendly": "User",
+                    "type": "USER"
                 },
                 {
                     "id": "role",
@@ -298,8 +298,8 @@
             "parameters": [
                 {
                     "id": "user",
-                    "usrFriendly": "user",
-                    "type": "user"
+                    "usrFriendly": "User",
+                    "type": "USER"
                 },
                 {
                     "id": "role",
@@ -315,8 +315,8 @@
             "parameters": [
                 {
                     "id": "user",
-                    "usrFriendly": "user",
-                    "type": "user"
+                    "usrFriendly": "User",
+                    "type": "USER"
                 },
                 {
                     "id": "role",

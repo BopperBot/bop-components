@@ -175,6 +175,16 @@
             "castable": [
                 "*"
             ]
+        },
+        {
+            "id": "DATE",
+            "usrFriendly": "Date",
+            "icon": "schedule",
+            "castable": [
+                "ANY",
+                "STRING",
+                "NUMBER"
+            ]
         }
     ]
 }
