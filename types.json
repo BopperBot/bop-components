@@ -189,7 +189,7 @@
         {
             "id": "LABEL",
             "usrFriendly": "Label",
-            "icon": "inventory",
+            "icon": "inventory_2",
             "castable": [
                 "ANY",
                 "STRING"
