@@ -160,7 +160,7 @@
             ]
         },
         {
-            "id": "ARRAY<?>",
+            "id": "ARRAY<ANY>",
             "usrFriendly": "Array of %s",
             "icon": "layers",
             "castable": [
