@@ -185,6 +185,15 @@
                 "STRING",
                 "NUMBER"
             ]
+        },
+        {
+            "id": "LABEL",
+            "usrFriendly": "Label",
+            "icon": "inventory",
+            "castable": [
+                "ANY",
+                "STRING"
+            ]
         }
     ]
 }
