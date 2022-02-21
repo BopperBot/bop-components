@@ -515,7 +515,7 @@
                 },
                 {
                     "id": "deafened",
-                    "usrFriendly": "Member deafened by admin?",
+                    "usrFriendly": "Member deafened by adminANY",
                     "type": "BOOLEAN"
                 },
                 {
