@@ -716,6 +716,73 @@
             ]
         },
         {
+            "id": "getArrayLength",
+            "usrFriendly": "Get Length of List",
+            "description": "Gets the length of a list.",
+            "parameters": [
+                {
+                    "id": "array",
+                    "usrFriendly": "List",
+                    "type": "ARRAY<ANY>"
+                }
+            ],
+            "returns": [
+                {
+                    "id": "length",
+                    "usrFriendly": "Length",
+                    "type": "NUMBER"
+                }
+            ]
+        },
+        {
+            "id": "getArrayIndex",
+            "usrFriendly": "Get Index of Item in List",
+            "description": "Gets the index of an item in a list.",
+            "parameters": [
+                {
+                    "id": "array",
+                    "usrFriendly": "List",
+                    "type": "ARRAY<ANY>"
+                },
+                {
+                    "id": "item",
+                    "usrFriendly": "Item",
+                    "type": "ANY"
+                }
+            ],
+            "returns": [
+                {
+                    "id": "index",
+                    "usrFriendly": "Index",
+                    "type": "NUMBER"
+                }
+            ]
+        },
+        {
+            "id": "arrayPush",
+            "usrFriendly": "Add item to List",
+            "description": "Adds an item to the end of a list.",
+            "parameters": [
+                {
+                    "id": "array",
+                    "usrFriendly": "List",
+                    "type": "ARRAY<ANY>"
+                },
+                {
+                    "id": "item",
+                    "usrFriendly": "Item",
+                    "type": "ANY"
+                }
+            ],
+            "returns": [
+                {
+                    "id": "array",
+                    "usrFriendly": "List",
+                    "type": "ARRAY<ANY>"
+                }
+            ]
+        },
+        {
             "id": "createEmoji",
             "usrFriendly": "Make an Emoji",
             "description": "Creates an emoji from text.",
@@ -733,6 +800,13 @@
                     "type": "EMOJI"
                 }
             ]
+        },
+        {
+            "id": "automationStop",
+            "usrFriendly": "Stop Bop",
+            "description": "Stop the current execution of this Bop, so that no more actions will be performed unless it is triggered again.",
+            "parameters": [],
+            "returns": []
         }
     ]
 }
