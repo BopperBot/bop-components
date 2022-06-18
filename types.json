@@ -82,7 +82,9 @@
             "usrFriendly": "True/False",
             "icon": "toggle_on",
             "castable": [
-                "ANY"
+                "ANY",
+                "STRING",
+                "NUMBER"
             ]
         },
         {
