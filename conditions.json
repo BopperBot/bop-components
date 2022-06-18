@@ -66,6 +66,78 @@
                     "type": "NUMBER"
                 }
             ]
+        },
+        {
+            "id": "stringStartsWith",
+            "usrFriendly": "Starts With",
+            "description": "Checks if the first text starts with the second text.",
+            "inline": "$1 starts with $2",
+            "parameters": [
+                {
+                    "id": "string",
+                    "usrFriendly": "Text",
+                    "type": "STRING"
+                },
+                {
+                    "id": "prefix",
+                    "usrFriendly": "Prefix",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "id": "stringEndsWith",
+            "usrFriendly": "Ends With",
+            "description": "Checks if the first text ends with the second text.",
+            "inline": "$1 ends with $2",
+            "parameters": [
+                {
+                    "id": "string",
+                    "usrFriendly": "Text",
+                    "type": "STRING"
+                },
+                {
+                    "id": "suffix",
+                    "usrFriendly": "Suffix",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "id": "stringContains",
+            "usrFriendly": "Contains",
+            "description": "Checks if the first text contains the second text.",
+            "inline": "$1 contains $2",
+            "parameters": [
+                {
+                    "id": "string",
+                    "usrFriendly": "Text",
+                    "type": "STRING"
+                },
+                {
+                    "id": "substring",
+                    "usrFriendly": "Substring",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "id": "stringMatchesRegex",
+            "usrFriendly": "Matches RegEx",
+            "description": "Checks if text matches a regular expression.",
+            "inline": "$1 matches $2",
+            "parameters": [
+                {
+                    "id": "string",
+                    "usrFriendly": "Text",
+                    "type": "STRING"
+                },
+                {
+                    "id": "regex",
+                    "usrFriendly": "RegEx",
+                    "type": "STRING"
+                }
+            ]
         }
     ]
 }
