@@ -4,6 +4,8 @@
             "id": "messageSend",
             "usrFriendly": "Send a Message",
             "description": "Sends a given message in a given channel as Bopper.",
+            "requiresPermission": true,
+            "permissionMessage": "Send messages",
             "parameters": [
                 {
                     "id": "text",
@@ -29,6 +31,8 @@
             "id": "messageDelete",
             "usrFriendly": "Delete a Message",
             "description": "Deletes a given message.",
+            "requiresPermission": true,
+            "permissionMessage": "Delete messages",
             "parameters": [
                 {
                     "id": "message",
@@ -41,6 +45,8 @@
             "id": "messageEdit",
             "usrFriendly": "Edit a Message",
             "description": "Edits a given message.",
+            "requiresPermission": true,
+            "permissionMessage": "Edit messages",
             "parameters": [
                 {
                     "id": "message",
@@ -58,6 +64,8 @@
             "id": "messagePin",
             "usrFriendly": "Pin a Message",
             "description": "Pins a given message to its channel.",
+            "requiresPermission": true,
+            "permissionMessage": "Pin and unpin messages to channels",
             "parameters": [
                 {
                     "id": "message",
@@ -70,6 +78,8 @@
             "id": "messageUnpin",
             "usrFriendly": "Unpin a Message",
             "description": "Unpins a given message from its channel.",
+            "requiresPermission": true,
+            "permissionMessage": "Pin and unpin messages to channels",
             "parameters": [
                 {
                     "id": "message",
@@ -82,6 +92,8 @@
             "id": "messageReactionAdd",
             "usrFriendly": "Add a Reaction",
             "description": "Reacts to a given message.",
+            "requiresPermission": true,
+            "permissionMessage": "React to messages",
             "parameters": [
                 {
                     "id": "message",
@@ -99,6 +111,8 @@
             "id": "messageReactionRemove",
             "usrFriendly": "Remove a Reaction",
             "description": "Un-reacts to a given message.",
+            "requiresPermission": true,
+            "permissionMessage": "React to messages",
             "parameters": [
                 {
                     "id": "message",
@@ -116,6 +130,8 @@
             "id": "messageReactionRemoveAll",
             "usrFriendly": "Remove All Reactions",
             "description": "Removes all reactions of a certain emoji from a given message.",
+            "requiresPermission": true,
+            "permissionMessage": "Remove all reactions from messages",
             "parameters": [
                 {
                     "id": "message",
@@ -133,6 +149,8 @@
             "id": "userBan",
             "usrFriendly": "Ban a User",
             "description": "Bans a given user from the server.",
+            "requiresPermission": true,
+            "permissionMessage": "Ban and unban users",
             "parameters": [
                 {
                     "id": "user",
@@ -150,6 +168,8 @@
             "id": "userUnban",
             "usrFriendly": "Unban a User",
             "description": "Unbans a given user from the server.",
+            "requiresPermission": true,
+            "permissionMessage": "Ban and unban users",
             "parameters": [
                 {
                     "id": "user",
@@ -162,6 +182,8 @@
             "id": "userKick",
             "usrFriendly": "Kick a User",
             "description": "Kicks a given user from the server.",
+            "requiresPermission": true,
+            "permissionMessage": "Kick users",
             "parameters": [
                 {
                     "id": "user",
@@ -179,6 +201,8 @@
             "id": "userTimeout",
             "usrFriendly": "Time out a User",
             "description": "Times out a given user in the server for a given time.",
+            "requiresPermission": true,
+            "permissionMessage": "Time out users",
             "parameters": [
                 {
                     "id": "user",
@@ -201,6 +225,8 @@
             "id": "userTimeoutRemove",
             "usrFriendly": "Remove a User's Timeout",
             "description": "Removes a given user's timeout for the server.",
+            "requiresPermission": true,
+            "permissionMessage": "Time out users",
             "parameters": [
                 {
                     "id": "user",
@@ -213,6 +239,8 @@
             "id": "userMove",
             "usrFriendly": "Move a User",
             "description": "Moves a given user to a given voice channel.",
+            "requiresPermission": true,
+            "permissionMessage": "Move users between voice channels",
             "parameters": [
                 {
                     "id": "user",
@@ -230,6 +258,8 @@
             "id": "userAddRole",
             "usrFriendly": "Add a Role to a user",
             "description": "Adds a given role to a given user.",
+            "requiresPermission": true,
+            "permissionMessage": "Give roles to users",
             "parameters": [
                 {
                     "id": "user",
@@ -247,6 +277,8 @@
             "id": "userRemoveRole",
             "usrFriendly": "Remove a Role from a user",
             "description": "Removes a given role from a given user.",
+            "requiresPermission": true,
+            "permissionMessage": "Remove roles from users",
             "parameters": [
                 {
                     "id": "user",
@@ -264,6 +296,8 @@
             "id": "roleCreate",
             "usrFriendly": "Create a Role",
             "description": "Creates a new role in the server.",
+            "requiresPermission": true,
+            "permissionMessage": "Create and delete roles",
             "parameters": [
                 {
                     "id": "name",
@@ -283,41 +317,9 @@
             "id": "roleDelete",
             "usrFriendly": "Delete a Role",
             "description": "Deletes a given role from the server.",
+            "requiresPermission": true,
+            "permissionMessage": "Create and delete roles",
             "parameters": [
-                {
-                    "id": "role",
-                    "usrFriendly": "Role",
-                    "type": "ROLE"
-                }
-            ]
-        },
-        {
-            "id": "roleuserAdd",
-            "usrFriendly": "Give a Role to a user",
-            "description": "Gives a given role to a given user.",
-            "parameters": [
-                {
-                    "id": "user",
-                    "usrFriendly": "User",
-                    "type": "USER"
-                },
-                {
-                    "id": "role",
-                    "usrFriendly": "Role",
-                    "type": "ROLE"
-                }
-            ]
-        },
-        {
-            "id": "roleuserRemove",
-            "usrFriendly": "Remove a Role from a user",
-            "description": "Removes a given role from a given user.",
-            "parameters": [
-                {
-                    "id": "user",
-                    "usrFriendly": "User",
-                    "type": "USER"
-                },
                 {
                     "id": "role",
                     "usrFriendly": "Role",
@@ -329,6 +331,8 @@
             "id": "textChannelCreate",
             "usrFriendly": "Create a Text Channel",
             "description": "Creates a new text channel in the server.",
+            "requiresPermission": true,
+            "permissionMessage": "Create and delete channels",
             "parameters": [
                 {
                     "id": "name",
@@ -363,6 +367,8 @@
             "id": "channelDelete",
             "usrFriendly": "Delete a Channel",
             "description": "Deletes a given channel from the server.",
+            "requiresPermission": true,
+            "permissionMessage": "Create and delete channels",
             "parameters": [
                 {
                     "id": "channel",
@@ -375,6 +381,8 @@
             "id": "channelEdit",
             "usrFriendly": "Edit a Channel",
             "description": "Edits a given channel in the server.",
+            "requiresPermission": true,
+            "permissionMessage": "Edit channels",
             "parameters": [
                 {
                     "id": "channel",
@@ -402,6 +410,8 @@
             "id": "channelMove",
             "usrFriendly": "Move a Channel",
             "description": "Moves a given channel to a given location.",
+            "requiresPermission": true,
+            "permissionMessage": "Edit channels",
             "parameters": [
                 {
                     "id": "channel",
@@ -419,6 +429,8 @@
             "id": "scheduledEventCreate",
             "usrFriendly": "Create a Server Event",
             "description": "Creates a new event in the server.",
+            "requiresPermission": true,
+            "permissionMessage": "Schedule server events",
             "parameters": [
                 {
                     "id": "topic",
@@ -451,6 +463,8 @@
             "id": "scheduledEventDelete",
             "usrFriendly": "Delete a Server Event",
             "description": "Deletes a given event from the server.",
+            "requiresPermission": true,
+            "permissionMessage": "Schedule server events",
             "parameters": [
                 {
                     "id": "event",
@@ -463,6 +477,8 @@
             "id": "scheduledEventEdit",
             "usrFriendly": "Edit a Server Event",
             "description": "Edits a given event in the server.",
+            "requiresPermission": true,
+            "permissionMessage": "Schedule server events",
             "parameters": [
                 {
                     "id": "event",
@@ -500,6 +516,7 @@
             "id": "createDate",
             "usrFriendly": "Make a Date",
             "description": "Creates a new date to be accessed later in the Bop.",
+            "requiresPermission": false,
             "parameters": [
                 {
                     "id": "year",
@@ -539,6 +556,7 @@
             "id": "labelStore",
             "usrFriendly": "Store a Label",
             "description": "Store a value that can be changed and accessed later in the Bop.",
+            "requiresPermission": false,
             "parameters": [
                 {
                     "id": "key",
@@ -556,6 +574,7 @@
             "id": "labelModify",
             "usrFriendly": "Modify a Label",
             "description": "Modify a value that has been stored earlier in the Bop.",
+            "requiresPermission": false,
             "parameters": [
                 {
                     "id": "label",
@@ -573,6 +592,7 @@
             "id": "math2",
             "usrFriendly": "Mathematical Operation on 2 Numbers",
             "description": "Performs a mathematical operation on two numbers.",
+            "requiresPermission": false,
             "parameters": [
                 {
                     "id": "operation",
@@ -612,6 +632,7 @@
             "id": "math1",
             "usrFriendly": "Mathematical Operation on 1 Number",
             "description": "Performs a mathematical operation on one number.",
+            "requiresPermission": false,
             "parameters": [
                 {
                     "id": "operation",
@@ -666,6 +687,7 @@
             "id": "switch",
             "usrFriendly": "Switch Values",
             "description": "Switches between two values based on a condition.",
+            "requiresPermission": false,
             "parameters": [
                 {
                     "id": "condition",
@@ -695,6 +717,7 @@
             "id": "getArrayItem",
             "usrFriendly": "Get Item in List",
             "description": "Gets an item from a list based on an index.",
+            "requiresPermission": false,
             "parameters": [
                 {
                     "id": "array",
@@ -719,6 +742,7 @@
             "id": "getArrayLength",
             "usrFriendly": "Get Length of List",
             "description": "Gets the length of a list.",
+            "requiresPermission": false,
             "parameters": [
                 {
                     "id": "array",
@@ -738,6 +762,7 @@
             "id": "getArrayIndex",
             "usrFriendly": "Get Index of Item in List",
             "description": "Gets the index of an item in a list.",
+            "requiresPermission": false,
             "parameters": [
                 {
                     "id": "array",
@@ -762,6 +787,7 @@
             "id": "arrayPush",
             "usrFriendly": "Add item to List",
             "description": "Adds an item to the end of a list.",
+            "requiresPermission": false,
             "parameters": [
                 {
                     "id": "array",
@@ -786,6 +812,7 @@
             "id": "createEmoji",
             "usrFriendly": "Make an Emoji",
             "description": "Creates an emoji from text.",
+            "requiresPermission": false,
             "parameters":[
                 {
                     "id": "text",
@@ -804,6 +831,7 @@
         {
             "id": "routineStop",
             "usrFriendly": "Stop Routine",
+            "requiresPermission": false,
             "description": "Stop the current execution of this routine, so that no more actions will be performed unless it is triggered again.",
             "parameters": [],
             "returns": []
