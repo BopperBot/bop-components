@@ -835,6 +835,21 @@
             "description": "Stop the current execution of this routine, so that no more actions will be performed unless it is triggered again.",
             "parameters": [],
             "returns": []
+        },
+        {
+            "id": "routineStart",
+            "usrFriendly": "Trigger Routine",
+            "requiresPermission": true,
+            "permissionMessage": "Trigger other routines that can add to your quota",
+            "description": "Manually trigger a routine to be executed.",
+            "parameters": [
+                {
+                    "id": "routine",
+                    "usrFriendly": "Routine",
+                    "type": "ROUTINE"
+                }
+            ],
+            "returns": []
         }
     ]
 }
