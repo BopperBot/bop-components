@@ -1,0 +1,71 @@
+{
+    "conditions": [
+        {
+            "id": "isTrue",
+            "usrFriendly": "Is True",
+            "description": "Checks if the value is true",
+            "inline": "$1 is true",
+            "parameters": [
+                {
+                    "id": "value",
+                    "usrFriendly": "Value",
+                    "type": "BOOLEAN"
+                }
+            ]
+        },
+        {
+            "id": "isEqual",
+            "usrFriendly": "Is Equal",
+            "description": "Checks if both values are equal.",
+            "inline": "$1 is equal to $2",
+            "parameters": [
+                {
+                    "id": "value1",
+                    "usrFriendly": "Value 1",
+                    "type": "ANY"
+                },
+                {
+                    "id": "value2",
+                    "usrFriendly": "Value 2",
+                    "type": "ANY"
+                }
+            ]
+        },
+        {
+            "id": "isGreaterThan",
+            "usrFriendly": "Greater Than",
+            "description": "Checks if the first value is greater than the second value.",
+            "inline": "$1 is greater than $2",
+            "parameters": [
+                {
+                    "id": "value1",
+                    "usrFriendly": "Value 1",
+                    "type": "NUMBER"
+                },
+                {
+                    "id": "value2",
+                    "usrFriendly": "Value 2",
+                    "type": "NUMBER"
+                }
+            ]
+        },
+        {
+            "id": "isLessThan",
+            "usrFriendly": "Less Than",
+            "description": "Checks if the first value is less than the second value.",
+            "inline": "$1 is less than $2",
+            "parameters": [
+                {
+                    "id": "value1",
+                    "usrFriendly": "Value 1",
+                    "type": "NUMBER"
+                },
+                {
+                    "id": "value2",
+                    "usrFriendly": "Value 2",
+                    "type": "NUMBER"
+                }
+            ]
+        }
+    ]
+}
