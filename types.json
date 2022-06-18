@@ -196,6 +196,15 @@
                 "ANY",
                 "STRING"
             ]
+        },
+        {
+            "id": "ROUTINE",
+            "usrFriendly": "Routine",
+            "icon": "receipt_long",
+            "castable": [
+                "ANY",
+                "STRING"
+            ]
         }
     ]
 }
