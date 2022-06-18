@@ -802,9 +802,9 @@
             ]
         },
         {
-            "id": "automationStop",
-            "usrFriendly": "Stop Bop",
-            "description": "Stop the current execution of this Bop, so that no more actions will be performed unless it is triggered again.",
+            "id": "routineStop",
+            "usrFriendly": "Stop Routine",
+            "description": "Stop the current execution of this routine, so that no more actions will be performed unless it is triggered again.",
             "parameters": [],
             "returns": []
         }
